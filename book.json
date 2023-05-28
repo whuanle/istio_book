@@ -12,8 +12,7 @@
     "popup",
     "prism",
     "hide-element",
-    "scripts",
-    "icp",
+    "head-append",
     "-highlight",
     "-livereload"
   ],
@@ -23,7 +22,8 @@
   "language": "zh-hans",
   "links": {
     "sidebar": {
-      "痴者工良的博客": "https://www.whuanle.cn"
+      "痴者工良的博客": "https://www.whuanle.cn",
+      "粤ICP备18051778号":"https://beian.miit.gov.cn/"
     }
   },
   "pluginsConfig": {
@@ -70,13 +70,18 @@
         ".gitbook-link"
       ]
     },
-    "scripts": {
-      "files": [
-        "./tj.js"
+    "head-append": {
+      "code": [
+        "<SCRIPTTAG>",
+        "var _hmt = _hmt || [];",
+        "(function() {",
+        "  var hm = document.createElement(\"script\");",
+        "  hm.src = \"https://hm.baidu.com/hm.js?22de128f5a7d2d5b218af6b9e6e37e4c\";",
+        "  var s = document.getElementsByTagName(\"script\")[0]; ",
+        "  s.parentNode.insertBefore(hm, s);",
+        "})();",
+        "</SCRIPTTAG>"
       ]
-    },
-    "icp": {
-      "number": "粤ICP备18051778号"
-  }
+    }
   }
 }
