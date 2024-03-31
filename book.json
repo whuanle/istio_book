@@ -72,6 +72,11 @@
     },
     "head-append": {
       "code": [
+        "<SCRIPTTAG>",
+        "var _hmt = _hmt || [];",
+        "(function() {",
+        "})();",
+        "</SCRIPTTAG>"
       ]
     }
   }
